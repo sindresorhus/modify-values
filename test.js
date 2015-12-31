@@ -1,10 +1,6 @@
-'use strict';
-var test = require('ava');
-var modifyValues = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(modifyValues({foo: 'UNICORN'}, function (val) {
-		return val.toLowerCase();
-	}).foo === 'unicorn');
-	t.end();
+test(t => {
+	t.is(fn({foo: 'UNICORN'}, x => x.toLowerCase()).foo, 'unicorn');
 });

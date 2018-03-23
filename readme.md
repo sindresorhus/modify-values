@@ -6,37 +6,33 @@
 ## Install
 
 ```
-$ npm install --save modify-values
+$ npm install modify-values
 ```
 
 
 ## Usage
 
 ```js
-var modifyValues = require('modify-values');
+const modifyValues = require('modify-values');
 
-modifyValues({foo: 'UNICORN'}, function (value, key) {
-	return value.toLowerCase();
-});
+modifyValues({foo: 'UNICORN'}, (value, key) => value.toLowerCase());
 //=> {foo: 'unicorn'}
 ```
 
 
 ## API
 
-### modifyValues(input, modifier)
+### modifyValues(input, transformer)
 
 Modifies the values and returns a new object.
 
 #### input
 
-*Required*  
-Type: `object`
+Type: `Object`
 
-#### modifier(value, key)
+#### transformer(value, key)
 
-*Required*  
-Type: `function`
+Type: `Function`
 
 Gets the value and key for each item and is expected to return the new value.
 
@@ -48,4 +44,4 @@ See [`modify-keys`](https://github.com/sindresorhus/modify-keys) for modifying t
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

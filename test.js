@@ -1,6 +1,6 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
-test(t => {
-	t.is(fn({foo: 'UNICORN'}, x => x.toLowerCase()).foo, 'unicorn');
+test('main', t => {
+	t.is(m({foo: 'UNICORN'}, x => x.toLowerCase()).foo, 'unicorn');
 });

@@ -28,7 +28,7 @@ Modifies the values and returns a new object.
 
 #### input
 
-Type: `Object`
+Type: `object`
 
 #### transformer(value, key)
 
@@ -42,6 +42,14 @@ Gets the value and key for each item and is expected to return the new value.
 See [`modify-keys`](https://github.com/sindresorhus/modify-keys) for modifying the keys of an object.
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-modify-values?utm_source=npm-modify-values&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>

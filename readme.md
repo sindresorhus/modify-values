@@ -1,4 +1,4 @@
-# modify-values [![Build Status](https://travis-ci.org/sindresorhus/modify-values.svg?branch=master)](https://travis-ci.org/sindresorhus/modify-values)
+# modify-values
 
 > Modify the values of an object
 

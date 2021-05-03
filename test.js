@@ -1,6 +1,6 @@
 import test from 'ava';
-import m from '.';
+import modifyValues from './index.js';
 
 test('main', t => {
-	t.is(m({foo: 'UNICORN'}, x => x.toLowerCase()).foo, 'unicorn');
+	t.is(modifyValues({foo: 'UNICORN'}, value => value.toLowerCase()).foo, 'unicorn');
 });

@@ -2,31 +2,28 @@
 
 > Modify the values of an object
 
-
 ## Install
 
 ```
 $ npm install modify-values
 ```
 
-
 ## Usage
 
 ```js
-const modifyValues = require('modify-values');
+import modifyValues from 'modify-values';
 
 modifyValues({foo: 'UNICORN'}, (value, key) => value.toLowerCase());
 //=> {foo: 'unicorn'}
 ```
 
-
 ## API
 
-### modifyValues(input, transformer)
+### modifyValues(object, transformer)
 
 Modifies the values and returns a new object.
 
-#### input
+#### object
 
 Type: `object`
 
@@ -36,11 +33,9 @@ Type: `Function`
 
 Gets the value and key for each item and is expected to return the new value.
 
-
 ## Related
 
 See [`modify-keys`](https://github.com/sindresorhus/modify-keys) for modifying the keys of an object.
-
 
 ---
 

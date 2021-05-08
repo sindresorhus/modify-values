@@ -1,7 +1,7 @@
 /**
 Modify the values of an object.
 
-@param transformer Gets the value and key for each item and is expected to return the new value.
+@param transformer - Gets the value and key for each item and is expected to return the new value.
 
 @example
 ```

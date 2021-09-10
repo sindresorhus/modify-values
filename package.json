@@ -1,6 +1,6 @@
 {
 	"name": "modify-values",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Modify the values of an object",
 	"license": "MIT",
 	"repository": "sindresorhus/modify-values",

@@ -11,4 +11,4 @@ modifyValues({foo: 'UNICORN'}, (value, key) => value.toLowerCase());
 //=> {foo: 'unicorn'}
 ```
 */
-export default function modifyValues<KeyType extends PropertyKey, ValueType, ReturnValueType>(object: Record<KeyType, ValueType>, transformer: (key: KeyType, value: ValueType) => ReturnValueType): Record<KeyType, ReturnValueType>;
+export default function modifyValues<KeyType extends PropertyKey, ValueType, ReturnValueType>(object: Record<KeyType, ValueType>, transformer: (value: ValueType, key: KeyType) => ReturnValueType): Record<KeyType, ReturnValueType>;
